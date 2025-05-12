@@ -580,16 +580,14 @@
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            <!-- Replace your entire current form with this code -->
-<form action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST" class="form">
-    <!-- Hidden fields for FormSubmit configuration -->
-    <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/thankyou.html">
-    <input type="hidden" name="_subject" value="New Message From Your Website Visitor">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
+            <form action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST" class="form">
+    <!-- Anti-spam & delivery fields -->
+    <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/">
+    <input type="hidden" name="_subject" value="URGENT: New Website Message">
+    <input type="hidden" name="_cc" value="kruthika.deepaks@gmail.com"> <!-- Backup copy -->
     <input type="text" name="_honey" style="display:none">
 
-    <!-- Your existing form fields (keep these exactly as is) -->
+    <!-- Your original fields (keep these EXACTLY) -->
     <div class="form-group">
         <input type="text" name="name" placeholder="Your Name" class="form-control" required>
     </div>
@@ -599,11 +597,11 @@
     <div class="form-group">
         <textarea name="message" placeholder="Your Message" class="form-control" required></textarea>
     </div>
+    
+    <!-- Force Gmail delivery -->
+    <input type="hidden" name="_autoresponse" value="Your message has been received!">
     <button type="submit" class="btn">Send Message</button>
 </form>
-    action="https://formsubmit.co/kruthika.deepaks@gmail.com"
-            <input type="hidden" name="_template" value="table"> <!-- Professional formatting -->
-<input type="text" name="_honey" style="display:none"> <!-- Anti-bot filter -->
         </div>
     </section>
 
