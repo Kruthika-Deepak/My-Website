@@ -580,21 +580,6 @@
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            <form onsubmit="sendEmail(event)">
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button>Send</button>
-</form>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  emailjs.init("YOUR_USER_ID");
-  function sendEmail(e) {
-    e.preventDefault();
-    emailjs.sendForm("service_id", "template_id", e.target)
-      .then(() => alert("Message sent!"))
-      .catch(() => alert("Error!"));
-  }
-</script>
         </div>
     </section>
 
