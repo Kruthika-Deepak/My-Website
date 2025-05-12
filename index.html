@@ -565,14 +565,15 @@
                 </div>
             </div>
             
+            
             <form action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST" class="form">
-    <!-- Anti-spam & delivery fields -->
+    <!-- FormSubmit Hidden Fields -->
     <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/">
-    <input type="hidden" name="_subject" value="URGENT: New Website Message">
-    <input type="hidden" name="_cc" value="kruthika.deepaks@gmail.com"> <!-- Backup copy -->
+    <input type="hidden" name="_subject" value="New Message From Your Website">
+    <input type="hidden" name="_template" value="table">
     <input type="text" name="_honey" style="display:none">
 
-    <!-- Your original fields (keep these EXACTLY) -->
+    <!-- Your Original Styled Fields (Unchanged) -->
     <div class="form-group">
         <input type="text" name="name" placeholder="Your Name" class="form-control" required>
     </div>
@@ -580,11 +581,14 @@
         <input type="email" name="email" placeholder="Your Email" class="form-control" required>
     </div>
     <div class="form-group">
-        <textarea name="message" placeholder="Your Message" class="form-control" required></textarea>
+        <textarea 
+            name="message" 
+            placeholder="Your Message" 
+            class="form-control" 
+            style="height: 150px; width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;" 
+            required
+        ></textarea>
     </div>
-    
-    <!-- Force Gmail delivery -->
-    <input type="hidden" name="_autoresponse" value="Your message has been received!">
     <button type="submit" class="btn">Send Message</button>
 </form>
         </div>
