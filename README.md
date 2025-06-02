@@ -16,8 +16,6 @@
 Welcome to my personal portfolio website!
 This website is a simple, responsive, and elegant online portfolio built using HTML, CSS, and JavaScript. It showcases my skills, projects, resume, and contact details—all in one place.
 
-🔗 Live Site: kruthika-deepak.github.io/My-Website
-
 <b>Features</b>
 <ul><li>Clean and minimal user interface</li>
 <li>Fully responsive design (mobile & desktop friendly)</li>
