@@ -15,7 +15,7 @@
         }
         
         body {
-            background-color: #f9f9f9;
+            background-color: #fffff;
             color: #333;
             line-height: 1.6;
         }
@@ -81,6 +81,7 @@
             font-size: 3.5rem;
             margin-bottom: 20px;
             animation: fadeInDown 1s ease;
+            color:white;
         }
         
         .hero-content p {
@@ -432,6 +433,32 @@
                 flex-direction: column;
             }
         }
+       /* Guarantees original appearance */
+textarea.form-control {
+    min-height: 150px !important;
+    width:150px;
+    font-family: 'Poppins' !important;
+    background: white !important;
+    box-shadow: none !important;
+}
+              body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 50px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #fffff;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -527,14 +554,21 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Project 3">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Project 4">
                 <div class="portfolio-overlay">
                     <h3>My Portfolio website</h3>
                     <p> My personal portfolio website </p>
                 </div>
              </div>   
              <div class="portfolio-item">
-                <img src="https://static.wixstatic.com/media/5b3b47_b25eca2009ce4dd190c8493dea5c68fa~mv2.gif" alt="Project 3">
+                <img src="https://www.bing.com/th/id/OGC.9e570fe00020412fdde2e4f782d6af35?cb=iwc2&pid=1.7&rurl=https%3a%2f%2fwww.ensight-technologies.com%2fwp-content%2fuploads%2f2023%2f07%2fHome-Parking-2-1.gif&ehk=hqviH7thG7kfDeMwWbD4kKK0c%2bGAiY2aizY44krshYU%3d" alt="Project 5">
+                <div class="portfolio-overlay">
+                    <h3>Smart Parking System</h3>
+                    <p>A Smart Parking System uses sensors, IoT, and mobile apps to help drivers find available parking spots in real time. </p>
+                </div>
+             </div>
+             <div class="portfolio-item">
+                <img src="https://static.wixstatic.com/media/5b3b47_b25eca2009ce4dd190c8493dea5c68fa~mv2.gif" alt="Project 6">
                 <div class="portfolio-overlay">
                     <h3>Body Mass Index calculator</h3>
                     <p>Calculates the Body Mass Index (BMI) based on user input for weight and height, and then categorizes the result </p>
@@ -559,40 +593,47 @@
                         <span>kruthika.deepaks@gmail.com</span>
                     </div>
                 </div>
-                
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BmW%2B1kPlKTZ24XgKeI2G%2BCw%3D%3D"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kruthika-deepak/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>  
             </div>
-            
-                <form class="contact-form" action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST">
-                    <div class="form-group">
-                      <label for="name">Your Name</label>
-                      <input type="text" name="name" required>
-                    </div>
+           <form action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST" class="form">
+    <!-- Hidden FormSubmit Fields -->
+    <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/thankyou.html">
+    <input type="hidden" name="_subject" value="New Portfolio Message">
+    <input type="text" name="_honey" style="display:none">
 
-                    <div class="form-group">
-                     <label for="email">Your Email</label>
-                        <input type="email" name="email" required>
-                    </div>
+    <!-- Your Original Form Structure -->
+    <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <textarea 
+            name="message" 
+            class="form-control" 
+            placeholder="Your Message" 
+            required
+            style="height: 150px; width: 100%; padding: 50px; border: 10px solid #ced4da; border-radius: 15px; font-family: 'Poppins', sans-serif; font-size: 14px; resize: horizontal;"
+        ></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+               <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/thankyou.html">
+</form>
+        </div>
+    </section>
 
-                    <div class="form-group">
-                       <label for="message">Your Message</label>
-                       <textarea name="message" required></textarea>
-                    </div>
-
-  <!-- 🔐 Required hidden fields -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New Message from Portfolio Contact Form">
-            <input type="hidden" name="_template" value="box">
-            <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/thankyou.html">
-
-           <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-           
-        <footer class="footer">
-           <p>&copy; 2025 Kruthika D</p>
-        </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Kruthika D</p>
+    </footer>
 
     <script>
         // Mobile Menu Toggle
@@ -611,9 +652,31 @@
                 
                 // Close mobile menu if open
                 document.querySelector('.nav-links').classList.remove('active');
-            });
+            });<form action="https://formsubmit.co/kruthika.deepaks@gmail.com" method="POST" class="form">
+    <!-- Hidden FormSubmit Fields (No Visual Impact) -->
+    <input type="hidden" name="_next" value="https://kruthika-deepak.github.io/My-Website/">
+    <input type="hidden" name="_subject" value="New Website Message">
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- Your EXACT Original Form Structure -->
+    <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Your Message" required 
+        style="height: 120px; width: 100%; padding: 10px; font-family: inherit; font-size: inherit;"></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+</form>
         });
-        
+        <div class="container">
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully. I'll get back to you soon.</p>
+        <a href="/My-Website/">← Return to Home</a>
+    </div>
         // Form Submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
